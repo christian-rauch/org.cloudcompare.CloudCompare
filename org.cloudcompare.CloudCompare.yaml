@@ -133,6 +133,14 @@ modules:
     config-opts:
       - -DWITH_TESTS=OFF
 
+  - name: MPI
+    sources:
+      - type: archive
+        url: https://download.open-mpi.org/release/open-mpi/v4.0/openmpi-4.0.4.tar.gz
+        sha256: dca264f420411f540a496bdd131bffd83e325fc9006286b39dd19b62d7368233
+    buildsystem: autotools
+    builddir: true
+
   - name: TBB
     sources:
       - type: archive
